@@ -30,7 +30,7 @@ $item_date = getAllItem();
                     <td><?php echo setStore($column['store_id'])?></td>
                     <td><?php echo $column['item_title'] ?></td>
                     <td><?php echo $column['comment'] ?></td>
-                    <td><a href="/views/item_detail.php?id=<?php echo $column['id'] ?>">詳細</a></td>
+                    <td><a href="../views/item_detail.php?id=<?php echo $column['id'] ?>">詳細</a></td>
                 </tr>
             <?php endforeach ?>
             </table>
