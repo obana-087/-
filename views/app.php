@@ -1,7 +1,8 @@
 <?php 
-require('../models/item_model.php');
+require_once('../models/item_model.php');
+// require_once('../controllers/item_controller.php.');
 
-$item_date = getAllItem();
+$item_date = Item\Dbc\getAllItem();
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +28,7 @@ $item_date = getAllItem();
             <?php foreach($item_date as $column): ?>
                 <tr>
                     <td><?php echo $column['id'] ?></td>
-                    <td><?php echo setStore($column['store_id'])?></td>
+                    <td><?php echo Item\Dbc\setStore($column['store_id'])?></td>
                     <td><?php echo $column['item_title'] ?></td>
                     <td><?php echo $column['comment'] ?></td>
                     <td><a href="../views/item_detail.php?id=<?php echo $column['id'] ?>">詳細</a></td>
