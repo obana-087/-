@@ -1,3 +1,4 @@
+/* app.php画面 */
 .main{
     text-align: center;
 }
@@ -10,3 +11,9 @@ td{
     padding: 10px;
 
 }
+
+/* item_detailの画面 */
+.item_detail_main{
+    text-align: center; 
+}
+
