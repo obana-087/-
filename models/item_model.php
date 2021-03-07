@@ -1,5 +1,11 @@
-<?php 
+<?php
+
+//名前空間、関数の指定ができる
 namespace Item\Dbc;
+//名前空間の省略ができる
+//use Item\Dbc;
+
+
 //データの取得
 function dbConnect(){
     //db接続
@@ -30,6 +36,7 @@ function getAllItem(){
     $dbh = null;
 }
 
+//商品詳細の取得
 function getItem($detail_id){
     if(empty($detail_id)){
         exit('IDが不正です');    
